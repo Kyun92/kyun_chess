@@ -1,0 +1,319 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3C3C3C;
+    color: #f3f3f3;
+    font-family: 'Fjalla One', sans-serif;
+}
+/*header start*/
+.header h1{
+    font-family: 'Lobster', cursive;;
+    margin: 0;
+    padding: 0;
+    background-color: #ca172d;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/*header end*/
+
+/*main start*/
+.main {
+    background-image: linear-gradient(rgba(0,0,0,0.08),rgba(0,0,0,0.08)),url(img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.main .container h1{
+    margin: 0;
+    padding: 0;
+    font-size: 19vw;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    margin-left: 0.2em;
+    
+}
+.main .container p {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+@media (min-width:768px){
+    .main .container h1 {
+        font-size: 13vw;
+    }
+    .main .container p {
+	    font-size: 1.5vw;
+ }
+}
+/*main end*/
+
+/*think_play start*/
+.think_play {
+    max-width: 1110px;
+    height: 100%;
+    margin-bottom: 30px;
+    margin: auto;
+    width: 100%;
+    
+}
+.think_play .img2{
+	background-image: url(img/img2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 330px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.think_play .img2 h1{
+	font-size: 10vw;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    margin-left: 0.1em;
+}
+.think_play .img2 .think {
+    color: #ca172d;
+}
+.think_play .img3{
+	background-image: url(img/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 330px;
+    margin-bottom: 10px;
+}
+.think_play .img4{
+	background-image: url(img/img4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 330px;
+    margin-bottom: 10px;
+}
+.think_play .img5{
+	background-image: url(img/img5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 330px;
+    margin-bottom: 10px;
+}
+@media (min-width:768px){
+    .think_play .container {
+	    display: flex;
+        flex-wrap: wrap;
+    }
+    .think_play .img2{
+	    flex: 1 1110px;
+ }
+    .think_play .img3{
+	    flex: 1 ;
+        margin-right: 10px;
+ }
+    .think_play .img4{
+	    flex: 1;
+        margin-right: 10px
+ }
+    .think_play .img5{
+	    flex: 1;
+ } 
+    .think_play .img2 h1{
+        font-size: 5rem;
+    }
+}
+/*think_play end*/
+
+/*king start*/
+.king{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)),url(img/king.png);
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    background-attachment: fixed;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.king h1{
+    font-size: 10vw;;
+    margin: 0;
+    margin-left: 0.2em;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+}
+.king p{
+    font-size: 1.5vw;
+    font-weight: 100;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/*king end*/
+/*pieces start*/
+.pieces{
+    margin-bottom: 30px
+}
+.pieces .container {
+	width: 100vw;
+    max-width: 1110px;
+    margin: auto;
+}
+.pieces .container .text {
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.pieces .container .text h1 {
+    font-size: 10vw;
+    margin: 0;
+    
+}
+.pieces .container .text p{
+    font-size: 0.8em;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.pieces .container .img7{
+	height: 400px;
+    background-image: url(img/bishop.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+.pieces .container .img8{
+	height: 400px;
+    background-image: url(img/queen.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+.pieces .container .img9{
+	height: 400px;
+    background-image: url(img/knight.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+.pieces .container .img10{
+	height: 400px;
+    background-image: url(img/rook.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+.pieces .container .img11{
+	height: 400px;
+    background-image: url(img/pawn.png);
+    background-size: cover;
+    background-position: center;
+}
+@media (min-width:768px){
+    .pieces .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pieces .container .img7 {
+        flex: 1 50%;
+        margin-bottom: 1px;
+    }
+    .pieces .container .img8 {
+        flex: 1 50%;
+        margin-bottom: 1px;
+    }
+    .pieces .container .img9 {
+        flex: 1;
+    }
+    .pieces .container .img10 {
+        flex: 1;
+    }
+    .pieces .container .img11 {
+        flex: 1;
+    }
+    .pieces .container .text{
+        border: 1px solid;
+        opacity: 0.0001;
+        transition: .3s ease-in-out;
+    }
+    .pieces .container .text h1, p{
+        font-size: 3rem;
+    }
+    .pieces .container .text:hover {
+        opacity: 1;
+    }
+    
+}
+/*pieces end*/
+
+/*checkmate start*/
+.checkmate{
+    margin-bottom: 30px;
+    height: 95vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(img/checkmate.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.checkmate .container{
+	display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.checkmate .container h1 {
+    margin: 0;
+    font-size: 8vw;
+    color: #ca172d;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    margin-left: 0.1em;
+}
+.checkmate .container p {
+    margin: 0;
+    font-size: 2rem;
+}
+/*checkmate end*/
+/*psd start*/
+.psd {
+    margin: 30px;
+}
+.psd .container {
+    max-width: 1110px;
+    margin: auto;
+    border: 1px solid;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.psd .container .psd_img {
+	width: 80%;
+    margin: auto;
+    display: flex;
+    box-shadow: 12px 10px 17px 0px rgba(15,15,15,1);
+    padding-bottom: 20px;
+    
+}
+@media (min-width:768px){
+    .psd .container .psd_img {
+        width: 30%;
+        
+    }
+}
+/*psd end*/
+/*footer start*/
+.footer p {
+    font-size: 1rem;
+    text-align: center;
+}
+/*footer end*/
